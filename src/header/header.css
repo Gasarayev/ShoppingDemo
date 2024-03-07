@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.head_menu {
+    height: 80px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.head_menu li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dropDownParent{
+    position: relative;
+}
+
+
+.dropdownMenu{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(25, 24, 24);
+    padding-left: 20px;
+    color: white;
+    position: absolute;
+    top: 80px;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s;
+    display:none;
+}
+
+.dropDownParent:hover .dropdownMenu{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+
+.dropdownMenu li:hover{
+    color: red;
+}
+
+.head_icons {
+    display: flex;
+    color: rgb(28, 28, 61);
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+
+}
+
+/* PRODUCT LIST */
+
+.productBasket{
+    width: 400px;
+    min-height:400px ;
+    position: absolute;
+    z-index: 9999999;
+    top: 55px;
+    left: -200px;
+    color: black;
+}
+
+.myProduct{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    background-color: rgba(244, 243, 241, 0.877);
+    cursor: auto;
+}
+
+.myProduct img{
+
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
+}
+
+.myProduct_content .myProduct_title{
+    font-size: 17px;
+    width: 180px;
+}
+
+.myProduct_content .myProduct_price{
+    font-size: 22px;
+    color: darkred;
+}
+
+.countBtn{
+
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countBtn button{
+    width: 40px;
+    height: 30px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(84, 8, 8);
+    color: white;
+    cursor: pointer;
+}
